@@ -1,35 +1,46 @@
-/* src/App.css */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background: linear-gradient(135deg, #25536b, #ffc3a0);
 }
 
 .app-container {
   max-width: 600px;
-  
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 20px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #020119;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .question-container {
+  color:white;
   margin-bottom: 20px;
 }
 
 .option-container {
   margin: 10px 0;
+  color: rgb(255, 255, 255);
+}
+#cc{
+  color: white;
 }
 
 label {
   display: flex;
   align-items: center;
   cursor: pointer;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+label:hover {
+  background: #e0e0e0;
 }
 
 input[type="radio"] {
@@ -37,17 +48,22 @@ input[type="radio"] {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   margin-top: 20px;
   cursor: pointer;
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 button:disabled {
-  background-color: #ccc;
+  background-color: #cccccc;
   cursor: not-allowed;
 }
 
